@@ -1,0 +1,11 @@
+
+#piechart {
+    width: 60%;
+    margin: 10% auto;
+    box-shadow: -14px 27px 40px grey, 6px -10px 40px grey;
+    padding: 5% 1%;
+    text-align: center;
+    /* font-family: 'Kosugi Maru', sans-serif; */
+    font-family: 'Fira Sans', sans-serif;
+}
+
