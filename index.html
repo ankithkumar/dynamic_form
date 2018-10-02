@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <div class="toast">
+            <p id="message">Toast Message</p>
+        </div>
         <div class="main_div">
             <form class="form-box">
                 <div class="header">
@@ -17,27 +20,37 @@
                 </div>
                 <div class="box">
                     <div class="types">
-                        <input type="radio" name="type"/>
-                        <label>type1</label>
+                        <input type="radio" id="radiobox1" name="type" value="type1"/>
+                        <label class="type_text">type1</label>
                     </div>
                     <div class="types">
-                            <input type="radio" name="type"/>
-                            <label>type2</label>
+                            <input type="radio" id="radiobox2" name="type" value="type2"/>
+                            <label class="type_text">type2</label>
                     </div>    
                     <div class="types">
-                            <input type="radio" name="type"/>
-                            <label>type3</label>
+                            <input type="radio" id="radiobox3" name="type" value="type3"/>
+                            <label class="type_text">type3</label>
                     </div>
                 </div>
                 <div class="box">
                         <div class="header">
                             <p>Explain Your choice above with comments</p>
                         </div>
-                    <input type="text" placeholder="Enter here"/>
+                    <input type="text" id="comments" placeholder="Enter here"/>
+                </div>
+                <div class="buttons">
+                    <input type="button" onclick="addToTheList()" value="add_review"/>
+                    <input type="reset" value="reset"/>
                 </div>    
             </form>
+            <div class="form-status">
+                <p class="info"></p>
+            </div>
+            <center> <a href="pieChart-creation.html">GO NEXT</a> </center>
         </div>
+        
+        <script src="localDataStorage-1.2.0.min.js"></script>
+        <script src="factory.js" async defer></script>
         <script src="index.js" async defer></script>
-       <center> <a href="pieChart-creation.html">GO NEXT</a> </center>
     </body>
 </html>
