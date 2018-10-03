@@ -26,11 +26,12 @@ window.addEventListener('load', () => {
 
 function dismissToast() {
     if (toastDismissed) {
-        toggleDissmiss = false;
+        toastDismissed = false;
         clearToast = window.setTimeout(() => {
             toast.style.transitionDelay = '1s';
             toast.style.visibility = 'hidden';
-            toggleDissmiss = true;
+            toastDismissed = true;
+            window.clearTimeout(clearToast);
         },2000)
     }
 }
